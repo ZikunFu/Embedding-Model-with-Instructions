@@ -1,7 +1,24 @@
 
 # Embedding Model with Instructions
 
-**TODO**
+## Current Progress
+
+- **Find or Build Datasets for Evaluation:**
+    - Currently using Hugging face dataset [stanfordnlp/imdb](https://huggingface.co/datasets/stanfordnlp/imdb)
+    - TODO: DBLP and Amazon reviews
+    - TODO: Exploring new datasets
+- **Generate Text Embedding**
+    - Currently using Hugging face Transformers [Pipelines](https://huggingface.co/docs/transformers/main_classes/pipelines)
+- **Enhance Text Embedding with Instructions:**
+    - TODO: Experimenting with domain-specific instructions to improve embeddings
+- **Evaluate the Quality of Original and Augmented Text Embeddings:**
+    - Currently evalute original text embeddings using SVM model
+    - TODO: non-linear models like MLP for better evaluation
+    - TODO: Utilizing Hugging Face [MTEB scoreboard](https://github.com/embeddings-benchmark/mteb)
+
+## Future Research Questions:
+- Does the inclusion of instructions improve the embeddings? (HOPEFULLY)
+- How can prompt engineering be used to further enhance embedding models?
 
 ## Setup Instructions
 
@@ -15,8 +32,14 @@ cd Embedding-Model-with-Instructions
 ### For Conda
 
 ```bash
-conda create --name embed --file requirements.txt
+conda create --name embed --file environment.yml
 conda activate embed
+```
+
+### For Pip
+
+```bash
+pip install -r requirements.txt
 ```
 
 ## Usage
