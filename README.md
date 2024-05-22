@@ -1,7 +1,7 @@
 
 # Embedding Model with Instructions
 
-This project demonstrates the usage of various text embedding models to encode sentences into dense vectors. The models used include BERT, Sentence Transformer, T5, and Instructor. The code provides a pipeline to extract features from these models. **TODO**
+**TODO**
 
 ## Setup Instructions
 
