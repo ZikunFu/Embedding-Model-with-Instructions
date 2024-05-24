@@ -5,7 +5,10 @@
 
 - **Find or Build Datasets for Evaluation:**
     - Currently using Hugging face dataset [stanfordnlp/imdb](https://huggingface.co/datasets/stanfordnlp/imdb)
-    - TODO: DBLP and Amazon reviews
+    - TODO: Adding challenging datasets (DBLP and Amazon reviews)
+        - TODO: keyword prediction from arXiv abstracts
+        - TODO: adding noise to inputs (e.g., spelling errors)
+        - TODO: Identify datasets where the selection of instructions is straightforward and beneficial to the model.
     - TODO: Continuously looking for more datasets
 - **Generate Text Embedding**
     - Currently using Hugging face Transformers [Pipelines](https://huggingface.co/docs/transformers/main_classes/pipelines)
@@ -13,6 +16,7 @@
     - TODO: Planning to implement Sentence Transformer, T5, Instructor, and other models.
 - **Enhance Text Embedding with Instructions:**
     - TODO: Experimenting with domain-specific instructions to improve embeddings
+    - TODO: Explore other kinds of instructions to improve embeddings
 - **Evaluate the Quality of Original and Augmented Text Embeddings:**
     - Currently evalute original text embeddings using SVM, MLP model from SKLearn
     - TODO: Exploring other evaluation method and classification models for linear seperability.
