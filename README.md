@@ -4,11 +4,19 @@
 ## Current Progress
 
 - **Find or Build Datasets for Evaluation:**
-    - Currently using Hugging face dataset [stanfordnlp/imdb](https://huggingface.co/datasets/stanfordnlp/imdb)
-    - TODO: Adding challenging datasets (DBLP and Amazon reviews)
-        - TODO: keyword prediction from arXiv abstracts
-        - TODO: adding noise to inputs (e.g., spelling errors)
-        - TODO: Identify datasets where the selection of instructions is straightforward and beneficial to the model.
+    - Working datasets
+        - [stanfordnlp/imdb](https://huggingface.co/datasets/stanfordnlp/imdb)
+            - 25k Train / 25k Test
+            - labels (0 - neg; 1 - pos)
+        - [yelp_review_full](https://huggingface.co/datasets/yelp_review_full)
+            - 650k Train / 50k Test
+            - labels (1 star ... 5 star)
+    - TODO: Challenging datasets
+        - [DBLP](https://github.com/angelosalatino/dblp-parser)
+        - [Amazon reviews](https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023)
+    - TODO: keyword prediction from arXiv abstracts
+    - TODO: adding noise to inputs (e.g., spelling errors)
+    - TODO: Identify datasets where the selection of instructions is straightforward and beneficial to the model.
     - TODO: Continuously looking for more datasets
 - **Generate Text Embedding**
     - Currently using Hugging face Transformers [Pipelines](https://huggingface.co/docs/transformers/main_classes/pipelines)
@@ -22,9 +30,7 @@
     - TODO: Exploring other evaluation method and classification models for linear seperability.
     - TODO: Utilizing Hugging Face [MTEB scoreboard](https://github.com/embeddings-benchmark/mteb) (Maybe)
 - **Pipeline**
-    - Implement loader/saver functions to save embeddings for future testing (with metadata)
-    - Implement function to modify dataset with instruction
-    - TODO: High-Level Class: Writing a high-level class for batch processing and experimenting with models.
+    - Inprogress: EmbedFlow for batch processing and experimenting on models.
 
 ## Future Research Questions:
 - Does the inclusion of instructions improve the embeddings? (HOPEFULLY)
