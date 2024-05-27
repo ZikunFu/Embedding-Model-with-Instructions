@@ -21,7 +21,7 @@
 - **Generate Text Embedding**
     - Currently using Hugging face Transformers [Pipelines](https://huggingface.co/docs/transformers/main_classes/pipelines)
     - Testing on BERT
-    - TODO: Planning to implement Sentence Transformer, T5, Instructor, and other models.
+    - TODO: Planning to implement BERT-large, Sentence Transformer, T5, Instructor, GPT2 and other models.
 - **Enhance Text Embedding with Instructions:**
     - TODO: Experimenting with domain-specific instructions to improve embeddings
     - TODO: Explore other kinds of instructions to improve embeddings
