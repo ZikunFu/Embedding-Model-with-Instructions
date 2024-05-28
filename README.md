@@ -25,7 +25,7 @@
     - TODO: 
         - GPT2 and other models
 - **Enhance Text Embedding with Instructions:**
-    - [Experiment Log]()
+    - [Experiment Log](https://docs.google.com/spreadsheets/d/1iBDq7C59G6olf_of_sTF5oCY3Itj6_kImzeUl3XMpd8/edit?usp=sharing)
     - TODO: 
         - Experimenting with domain-specific instructions to improve embeddings
         - Explore other kinds of instructions to improve embeddings
