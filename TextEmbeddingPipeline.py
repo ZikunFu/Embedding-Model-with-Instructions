@@ -43,9 +43,10 @@ class EmbedFlow:
         self.model = pipeline("feature-extraction", model=self.models[model_name], device=self.device)
 
     def load_sample_data(self, sample_size=5000):
-        dataset = load_dataset(self.datasets[self.dataset_name.upper()])
-        self.train_data = dataset['train'].shuffle(seed=42).select(range(sample_size))
-        self.test_data = dataset['test'].shuffle(seed=42).select(range(sample_size))
+        dataset = load_dataset(self.datasets[self.dataset_name.upper()])]
+        if(sample_size!=0):
+            self.train_data = dataset['train'].shuffle(seed=42).select(range(sample_size))
+            self.test_data = dataset['test'].shuffle(seed=42).select(range(sample_size))
 
         self.train_data.save_to_disk('sampled_train_data')
         self.test_data.save_to_disk('sampled_test_data')
@@ -61,7 +62,7 @@ class EmbedFlow:
 
     def augment_data(self):
         self.train_data = self.train_data.map(self.modify_example)
-        self.test_data = self.test_data.map(self.modify_example)
+        #self.test_data = self.test_data.map(self.modify_example)
         print("Data augmented with prefixes and suffixes.")
 
     def modify_example(self, example):
