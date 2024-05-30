@@ -11,20 +11,26 @@
         - [yelp_review_full](https://huggingface.co/datasets/yelp_review_full)
             - 650k Train / 50k Test
             - labels (1 star ... 5 star)
+        - [arXiv-Abstract-Label-20k](https://huggingface.co/datasets/Voice49/arXiv-Abstract-Label-20k)
+            - 10k Train / 10k Test
+            - labels (8 Primary Categories: Math, CS,...)
     - TODO: 
-        - Add Challenging datasets
+        - Challenging datasets
             - [DBLP](https://github.com/angelosalatino/dblp-parser)
             - [Amazon reviews](https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023)
-            - ArXiv abstracts (keyword prediction)
         - Adding noise to inputs (e.g., spelling errors)
         - Identify datasets where the selection of instructions is straightforward and beneficial to the model.
         - Exploring more datasets
-- **Text Embedding Model**
+- **Embedding Models**
     - Implemented:
-        - Bert, Bert-Large, Instructor, T5
-    - TODO: 
-        - GPT2 and other models
-- **Enhance Text Embedding with Instructions:**
+        - Bert
+        - Bert-Large
+        - Instructor 
+        - T5
+        - GPT2 (Medium)
+    - TODO:
+        - to be added...
+- **Instructions**
     - [Experiment Log](https://docs.google.com/spreadsheets/d/1iBDq7C59G6olf_of_sTF5oCY3Itj6_kImzeUl3XMpd8/edit?usp=sharing)
     - TODO: 
         - Experimenting with domain-specific instructions to improve embeddings
