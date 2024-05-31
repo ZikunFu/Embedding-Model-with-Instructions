@@ -18,9 +18,7 @@
         - Challenging datasets
             - [DBLP](https://github.com/angelosalatino/dblp-parser)
             - [Amazon reviews](https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023)
-        - Adding noise to inputs (e.g., spelling errors)
-        - Identify datasets where the selection of instructions is straightforward and beneficial to the model.
-        - Exploring more datasets
+            - Explore Datasets from Kaggle
 - **Embedding Models**
     - Implemented:
         - Bert
@@ -29,19 +27,14 @@
         - T5
         - GPT2 (Medium)
     - TODO:
-        - to be added...
+        - Implement larger models from [MTEB scoreboard](https://github.com/embeddings-benchmark/mteb)
 - **Instructions**
     - [Experiment Log](https://docs.google.com/spreadsheets/d/1iBDq7C59G6olf_of_sTF5oCY3Itj6_kImzeUl3XMpd8/edit?usp=sharing)
     - TODO: 
-        - Experimenting with domain-specific instructions to improve embeddings
-        - Explore other kinds of instructions to improve embeddings
+        - Effects of instructions: study how sensitive models are to instructions.
 - **Evaluation**
     - SVM (Linear)
     - MLP
-        - ReLu
-    - TODO: 
-        - Exploring other methods.
-        - [MTEB scoreboard](https://github.com/embeddings-benchmark/mteb)
 
 ## Research Questions:
 - Does the inclusion of instructions improve the embeddings? (HOPEFULLY)
