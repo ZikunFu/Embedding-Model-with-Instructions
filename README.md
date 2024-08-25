@@ -37,7 +37,7 @@
     - MLP
 
 ## Research Questions:
-- Does the inclusion of instructions improve the embeddings? (HOPEFULLY)
+- Does the inclusion of instructions improve the embeddings? 
 - How can prompt engineering be used to further enhance embedding models?
 
 ## Setup Instructions
